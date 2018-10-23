@@ -5,8 +5,11 @@
 #include "chinese.h"
 #include "teacher.h"
 #include "student.h"
+#include "factory_method.h"
 #include "simple_product_factory.h"
 #include "./googletest/include/gtest/gtest.h"
+#include "student_factory_method.h"
+
 using std::cout;
 using std::make_shared;
 /*TEST(TEST1,Chinese_Test_get) {
@@ -157,7 +160,7 @@ int main() {
     cout<<"____________callback____________"<<endl;
     teacher_haha.bind(student_ming,teacher_haha);
 
-    cout<<"____________SimpleFactory____________"<<endl;
+    cout<<"____________SimpleFactory____________"<<endl;   //simple_product_factory.cpp/.h
     shared_ptr<string> c_name (new string(" "));
     unsigned int c_id = 0;
     int c_age = 0;
@@ -165,5 +168,17 @@ int main() {
     SimpleFactory simple_factory;
     product_chinese = simple_factory.create_chinese("teacher");
     cout<<product_chinese<<endl;
+
+    cout<<"____________FactoryMethod____________"<<endl;
+    shared_ptr<string> cc_name (new string(" "));
+    unsigned int cc_id = 0;
+    int cc_age = 0;
+    Chinese factory_method_chinese(cc_name,cc_id,cc_age);
+    FactoryMethod *factoryMethod = NULL;
+    factoryMethod = new StudentFactoryMethod();
+    factory_method_chinese = factoryMethod->createChinese();
+    cout<<factory_method_chinese<<endl;
+
+
     return 0;
 }
