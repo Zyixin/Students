@@ -5,6 +5,7 @@
 #include "chinese.h"
 #include "teacher.h"
 #include "student.h"
+#include "simple_product_factory.h"
 #include "./googletest/include/gtest/gtest.h"
 using std::cout;
 using std::make_shared;
@@ -155,5 +156,14 @@ int main() {
 //=========================================================================================
     cout<<"____________callback____________"<<endl;
     teacher_haha.bind(student_ming,teacher_haha);
+
+    cout<<"____________SimpleFactory____________"<<endl;
+    shared_ptr<string> c_name (new string(" "));
+    unsigned int c_id = 0;
+    int c_age = 0;
+    Chinese product_chinese(c_name,c_id,c_age);
+    SimpleFactory simple_factory;
+    product_chinese = simple_factory.create_chinese("teacher");
+    cout<<product_chinese<<endl;
     return 0;
 }

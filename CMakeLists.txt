@@ -10,8 +10,8 @@ include_directories(./googletest/include)
 link_directories(./googletest)
 
 set(Subject_SRC subject.h subject.cpp compulsory_subject.h compulsory_subject.cpp elective_subject.h elective_subject.cpp)
-
-add_executable(Students main.cpp chinese.h chinese.cpp teacher.h teacher.cpp student.h student.cpp subject.h subject.cpp ${Subject_SRC})
+set(Simple_factory_SRC simple_product_factory.cpp simple_product_factory.h)
+add_executable(Students main.cpp chinese.h chinese.cpp teacher.h teacher.cpp student.h student.cpp subject.h subject.cpp ${Subject_SRC} ${Simple_factory_SRC})
 
 
 #teacher.h teacher.cpp
