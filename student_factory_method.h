@@ -10,7 +10,7 @@
 #include "factory_method.h"
 
 class StudentFactoryMethod : public FactoryMethod{
-    Chinese createChinese() override;
+    zyx::Chinese createChinese() override;
 };
 
 

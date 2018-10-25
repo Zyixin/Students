@@ -8,10 +8,9 @@
 #include <iostream>
 #include <cstring>
 #include "chinese.h"
-#include "teacher.h"
 
 class SimpleFactory{
 public:
-    static Chinese create_chinese(string type) ;
+    static zyx::Chinese create_chinese(string type) ;
 };
 #endif //STUDENTS_SIMPLE_PRODUCT_FACTORY_H

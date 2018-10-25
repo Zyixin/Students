@@ -12,6 +12,7 @@
 
 using std::cout;
 using std::make_shared;
+using namespace zyx;
 /*TEST(TEST1,Chinese_Test_get) {
     char my_name[]="ming_ming";
     unsigned int my_id = 1;

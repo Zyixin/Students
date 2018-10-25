@@ -5,7 +5,7 @@
 #include "student_factory_method.h"
 #include "student.h"
 
-Chinese StudentFactoryMethod::createChinese() {
+zyx::Chinese StudentFactoryMethod::createChinese() {
     shared_ptr<string> s_name (new string("factoryMethod_student"));
     unsigned int s_id = 1;
     int s_age = 18;
@@ -15,7 +15,7 @@ Chinese StudentFactoryMethod::createChinese() {
     vector<string> ming_elec_sub;
     ming_elec_sub.push_back("computer");
     ming_elec_sub.push_back("music");
-    Student student_product(s_name,s_id,s_age,ming_comp_sub,ming_elec_sub);
+    zyx::Student student_product(s_name,s_id,s_age,ming_comp_sub,ming_elec_sub);
     return student_product;
   //  return
 }

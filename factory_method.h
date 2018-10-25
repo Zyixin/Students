@@ -10,7 +10,7 @@
 
 class FactoryMethod {
 public:
-    virtual Chinese createChinese() = 0;
+    virtual zyx::Chinese createChinese() = 0;
 };
 
 

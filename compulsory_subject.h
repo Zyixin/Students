@@ -8,7 +8,7 @@
 
 #include "subject.h"
 
-namespace lele {
+namespace zyx {
 
     class CompulsorySubject : public Subject {
     public:

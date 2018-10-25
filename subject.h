@@ -4,6 +4,7 @@
 
 #ifndef STUDENTS_SUBJECT_H
 #define STUDENTS_SUBJECT_H
+
 #include <vector>
 #include <string>
 #include <memory>
@@ -19,7 +20,7 @@ using std::shared_ptr;
 using std::weak_ptr;
 using std::make_shared;
 
-namespace lele {
+namespace zyx {
     class Teacher; // 前向声明
     class Subject {
 
@@ -67,5 +68,5 @@ namespace lele {
     };
 }
 
-
 #endif //STUDENTS_SUBJECT_H
+

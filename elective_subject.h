@@ -8,7 +8,7 @@
 
 #include "subject.h"
 
-namespace lele {
+namespace zyx {
     class ElectiveSubject : public Subject {
     public:
         ElectiveSubject(const string &m_subject_name, float m_point, short m_times, const Option<string> &m_description,

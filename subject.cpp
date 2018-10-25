@@ -3,7 +3,7 @@
 //
 #include "subject.h"
 
-namespace lele {
+namespace zyx {
 
     Subject::Subject(const string &m_subject_name, float m_point, short m_times, const Option<string> &m_description,
                      const vector<shared_ptr<Teacher>> &mp_teachers) : m_subject_name(m_subject_name), m_point(m_point),

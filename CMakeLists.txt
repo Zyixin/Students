@@ -14,7 +14,7 @@ set(Simple_factory_SRC simple_product_factory.cpp simple_product_factory.h)
 set(Factory_method_SRC teacher_factory_method.cpp teacher_factory_method.h student_factory_method.cpp student_factory_method.h
         factory_method.cpp factory_method.h)
 
-add_executable(Students main.cpp chinese.h chinese.cpp teacher.h teacher.cpp student.h student.cpp subject.h subject.cpp ${Subject_SRC} ${Simple_factory_SRC} ${Factory_method_SRC})
+add_executable(Students main.cpp chinese.h chinese.cpp teacher.h teacher.cpp student.h student.cpp ${Subject_SRC} ${Simple_factory_SRC} ${Factory_method_SRC})
 
 
 #teacher.h teacher.cpp
